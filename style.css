@@ -3,17 +3,24 @@
 	font-family: 'Gelasio', serif;
 	font-weight: 200;
 }
+
 body{
 	background-color: #F1DDBF;
 }
-.nav{
+
+.nav__ul-responsive{
+	display: none;
+}
+
+
+.nav{								/* nav */
 	margin-top: 5px;
 	border: 5px solid #525E75;
 	border-radius: 20px;
 	text-align: center;
 	background-color: #92BA92 ;
-
 }
+
 .nav__li{
 	display: inline-block;
 	padding: 5px;
@@ -22,23 +29,81 @@ body{
 	margin-right: 35px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	
 }
-.nav__li i{
-width: 25px;
-margin-right: 5px;
 
+.nav__li i{
+	width: 25px;
+	margin-right: 5px;
 }
+
 .nav__li a:link{
 	color: #000000;
 	text-decoration: none;
 	outline: none;
 }
+
 .nav__li a:visited{
 	color: #000000;
 	text-decoration: none;
 	outline: none;
 }
-.nav__ul-responsive{
-	display: none;
+
+.section{							/* section */
+	font-size: 130%;
+	display:flex ;
+	flex-wrap:wrap ;
+	justify-content: space-evenly; 
+	align-content: flex-end;
+}
+
+.article{
+	flex: 1 0 100px;
+	background-color: #78938A;
+	border-radius: 15px;
+	border:  5px solid #525E75;
+}
+
+.section__article-dp{ 				/* Section article Datos personales */ 
+	margin: auto;
+	min-width: 280px;
+	max-height: 200px;
+	padding: 20px;
+	margin: 50px;
+}
+
+.section__h3{
+	padding-bottom: 15px;
+	text-decoration: underline;
+}
+
+.section__p-dp{
+	padding: 10px;
+	line-height: 30px;
+}
+
+.section__article-Estudios{			/* Section article Estudios */	
+	min-width: 280px;
+	max-height: 200px;
+	padding: 20px;
+	margin: 50px;
+}
+
+.section__p-Estudios{
+	padding: 10px;
+	line-height: 21px;
+}
+
+.section__article-exp{				/* Section article Experiencia */ 
+	margin: ;
+	flex: 2 0 450px;
+	min-height: 500px;
+	padding: 20px;
+	margin: 50px;
+}
+
+.section__li-exp{
+
+	padding: 25px;
+	margin: 25px;
+	line-height: 21px;
 }

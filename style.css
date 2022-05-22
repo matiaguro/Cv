@@ -2,10 +2,14 @@
 * {
 	font-family: 'Gelasio', serif;
 	font-weight: 200;
+
 }
 
 body{
-	background-color: #F1DDBF;
+	background-color: #5F7161;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%235F7161' cx='50' cy='0' r='50'/%3E%3Cg fill='%23657565' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%236b7969' cx='50' cy='100' r='50'/%3E%3Cg fill='%23717d6d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23778271' cx='50' cy='200' r='50'/%3E%3Cg fill='%237d8675' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23828a79' cx='50' cy='300' r='50'/%3E%3Cg fill='%23888e7e' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e9382' cx='50' cy='400' r='50'/%3E%3Cg fill='%23949787' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%239a9b8c' cx='50' cy='500' r='50'/%3E%3Cg fill='%239fa090' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5a495' cx='50' cy='600' r='50'/%3E%3Cg fill='%23aaa99a' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b0ada0' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b5b2a5' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbb6aa' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c0bbaf' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6c0b5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23cbc4ba' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0C9C0' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: contain;;
 }
 
 .nav__ul-responsive{
@@ -13,22 +17,32 @@ body{
 }
 
 
-.nav{								/* nav */
-	margin-top: 5px;
+.nav{									/* nav */
+	height: 90px;
+	position: sticky;
+	top: 0px;
+	margin-top: 3px;
 	border: 5px solid #525E75;
-	border-radius: 20px;
+	border-radius: 10px;
 	text-align: center;
 	background-color: #92BA92 ;
+	
 }
 
 .nav__li{
 	display: inline-block;
 	padding: 5px;
 	font-size: 25px;
-	margin-left:35px ;
-	margin-right: 35px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px;
+	margin-right:90px;
+	margin-left: 90px;
+	transition: all .15s;
+	
+}
+.nav__li:hover{
+	border: 2px solid #5F7161;
+	border-radius: 5px ;
+	box-shadow: 7px 7px #333;
 }
 
 .nav__li i{
@@ -48,62 +62,123 @@ body{
 	outline: none;
 }
 
+.section-intro{							/*Titulo y img*/
+	font-size: 115%;
+	display: grid;
+	align-content: center;
+	margin: auto;
+}
+
+
+.section-intro__articleDP{
+	margin: 35px auto;
+	background: #5F7161;
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(minmax(305px,340px));
+	align-items: center;
+	padding: 25px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	transition: all .5s;
+}
+
+.section-intro__articleDP:hover{
+	box-shadow: 15px 25px #333;
+}
+
+.section-intro__img{
+	background-color: #446A46;
+	border-radius: 60%;
+	border: 2px solid #000; 
+	margin: auto;
+	grid-column: 1/2;
+	grid-row: 1/span 4;
+}
+
+.section-intro__h1{
+	grid-column: 2;
+	grid-row: 1;
+}
+.section-intro__h3{
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.section-intro__p-dp{
+
+	grid-column: 2;
+	grid-row: 3/span 2;
+}
+
 .section{							/* section */
-	font-size: 130%;
-	display:flex ;
-	flex-wrap:wrap ;
-	justify-content: space-evenly; 
-	align-content: flex-end;
+	font-size: 115%;
+	display: grid;
+	margin: 100px;
+	padding: 50px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	grid-template-areas:
+		"estudio estudio estudio estudio"
+		"ExpLab ExpLab ExpLab ExpLab"
+		"Conocimientos Conocimientos Conocimientos Conocimientos"
+		"cont cont cont cont";
+	grid-auto-rows: repeat(5,1fr);
+	height: 100%;
+	grid-gap: 20px;
+	background: #525E75;
+	line-height: 35px;
+	transition: all .5s;
+}
+
+.section:hover{
+	box-shadow: 15px 25px #333;
+}
+
+.section__article-dp{
+	display: grid;
+	grid-area: datosP ;
+	justify-items: center;
+}
+
+.section__article-Estudios{
+	display: grid;
+	grid-area: estudio ;
+	justify-items: center;
+}
+
+.section__article-exp{
+	display: grid;
+	grid-area: ExpLab ;
+	justify-items: center;
+}
+
+.article-conocimientos{
+	grid-area: Conocimientos;	
+}
+
+.article-conocimientos h3{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.article-contacto{
+	grid-area: cont;
 }
 
 .article{
-	flex: 1 0 100px;
 	background-color: #78938A;
-	border-radius: 15px;
-	border:  5px solid #525E75;
+	border: 2px solid #000;
+	border-radius: 50px;
+	padding: 40px;
 }
 
-.section__article-dp{ 				/* Section article Datos personales */ 
-	margin: auto;
-	min-width: 280px;
-	max-height: 200px;
-	padding: 20px;
-	margin: 50px;
+.article-conocimientos__ul{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
 }
 
-.section__h3{
-	padding-bottom: 15px;
-	text-decoration: underline;
-}
-
-.section__p-dp{
-	padding: 10px;
-	line-height: 30px;
-}
-
-.section__article-Estudios{			/* Section article Estudios */	
-	min-width: 280px;
-	max-height: 200px;
-	padding: 20px;
-	margin: 50px;
-}
-
-.section__p-Estudios{
-	padding: 10px;
-	line-height: 21px;
-}
-
-.section__article-exp{				/* Section article Experiencia */ 
-	margin: ;
-	flex: 2 0 450px;
-	min-height: 500px;
-	padding: 20px;
-	margin: 50px;
-}
-
-.section__li-exp{
-
-	padding: 25px;
-	margin: 25px;
-	line-height: 21px;
+.programacion{
+	grid-column: 2;
+	grid-row: 1/7;
 }

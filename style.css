@@ -9,7 +9,7 @@ body{
 	background-color: #5F7161;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%235F7161' cx='50' cy='0' r='50'/%3E%3Cg fill='%23657565' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%236b7969' cx='50' cy='100' r='50'/%3E%3Cg fill='%23717d6d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23778271' cx='50' cy='200' r='50'/%3E%3Cg fill='%237d8675' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23828a79' cx='50' cy='300' r='50'/%3E%3Cg fill='%23888e7e' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e9382' cx='50' cy='400' r='50'/%3E%3Cg fill='%23949787' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%239a9b8c' cx='50' cy='500' r='50'/%3E%3Cg fill='%239fa090' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5a495' cx='50' cy='600' r='50'/%3E%3Cg fill='%23aaa99a' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b0ada0' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b5b2a5' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbb6aa' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c0bbaf' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6c0b5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23cbc4ba' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0C9C0' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
 	background-attachment: fixed;
-	background-size: contain;;
+	background-size: contain;
 }
 
 .nav__ul-responsive{
@@ -146,11 +146,17 @@ body{
 	grid-area: estudio ;
 	justify-items: center;
 }
+.section__article-Estudios h3{
+	text-decoration: underline;
+}
 
 .section__article-exp{
 	display: grid;
 	grid-area: ExpLab ;
 	justify-items: center;
+}
+.section__article-exp h3{
+	text-decoration: underline;
 }
 
 .article-conocimientos{
@@ -160,6 +166,7 @@ body{
 .article-conocimientos h3{
 	text-align: center;
 	padding-bottom: 40px;
+	text-decoration: underline;
 }
 
 .article-contacto{
@@ -176,9 +183,20 @@ body{
 .article-conocimientos__ul{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
+	padding: 20px;
+	padding-left: 50px;
 }
 
 .programacion{
-	grid-column: 2;
-	grid-row: 1/7;
+	grid-column:1/span 2 ;
+	grid-row: 3/7;	
+	 list-style:none	
 }
+.programacion h3{
+	margin: auto;
+	text-decoration: underline;
+
+
+}
+
+

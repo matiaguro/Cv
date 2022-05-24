@@ -12,11 +12,6 @@ body{
 	background-size: contain;
 }
 
-.nav__ul-responsive{
-	display: none;
-}
-
-
 .nav{									/* nav */
 	height: 90px;
 	position: sticky;
@@ -201,64 +196,39 @@ body{
 
 .article-contacto{
 	grid-area: cont;
-}
-.article-contacto__ul{
 	display: grid;
-	grid-template-areas:
-	"whats gmail" ;
-	grid-auto-rows: repeat(2,1fr);
-	grid-area: cont;
-}
+	grid-template-columns: 1fr 1fr;
 
-.article-contacto__li-whatsapp{
+}
+.article-contacto__div {
 	display: grid;
-	grid-area: whats;	
-	grid-auto-rows: repeat(3,1fr);    
+	align-self: center;
+	padding: 10px;
+
 }
 
-.article-contacto__li-whatsapp h4{
-	margin: 0;
-	padding: 0;
+.article-contacto__div a:link{
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+}
+.article-contacto__div a:visited{
+	color: #000000;
+	text-decoration: none;
+	outline: none;
 }
 
-.article-contacto__li-whatsapp div{
-	min-width: 100px;
-	min-height: 100px;
-	max-width: 100px;
-	max-height: 100px;
+.article-contacto__div h4{
+	margin: auto;
+	text-decoration: underline;
+	padding: 10px;
+}
+
+.article-contacto__div a img{
+
 	margin: auto;
 }
 
-.article-contacto__li-whatsapp img{
-	background:#222;
-	border-radius: 50%;
-	padding: 10px;
-	animation: tell;
-	animation-duration: 1.3s;
-	animation-iteration-count: infinite;
-	animation-timing-function:  22s;
-	animation-name: tell;
-	
-}
-@keyframes tell{
-	from{
-		transform: rotate(-10deg);
-	}
-	50%{
-		transform: rotate(45deg);
-	}
-	100%{
-		transform: rotate(-10deg);
-	}
-
-	to{
-		transform: rotate(-10deg);
-	}
-}
-
-
-.article-contacto__li-gmail{
-	display: grid;
-	grid-area: gmail;
-
+.Gmail{
+	border-left: 2px dotted #000 ;
 }

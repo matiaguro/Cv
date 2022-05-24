@@ -20,8 +20,7 @@ body{
 	border: 5px solid #525E75;
 	border-radius: 10px;
 	text-align: center;
-	background-color: #92BA92 ;
-	
+	background-color: #92BA92 ;	
 }
 
 .nav__li{
@@ -31,8 +30,7 @@ body{
 	margin: 20px;
 	margin-right:90px;
 	margin-left: 90px;
-	transition: all .15s;
-	
+	transition: all .15s;	
 }
 .nav__li:hover{
 	border: 2px solid #5F7161;
